@@ -4,6 +4,12 @@ plugins {
     id 'maven'
 }
 
+project.ext.react = [
+        bundleInDebug   : true,
+        jsBundleDirDebug: "$buildDir/intermediates/bundles/debug/assets",
+        jsBundleDirRelease: "$buildDir/intermediates/bundles/release/assets"
+]
+
 android {
     compileSdkVersion 31
     buildToolsVersion "30.0.3"
