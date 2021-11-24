@@ -59,8 +59,7 @@ buck-out/
 */fastlane/screenshots
 
 # Bundle artifact
-*.jsbundle
-*.bundle
+
 *.bundle.map
 *.jsbundle.map
 !packages/main/ios/Settings.bundle
