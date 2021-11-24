@@ -1,0 +1,6 @@
+jdk:
+  - openjdk9
+install:
+  - echo "Publishing React Native SDK"
+  - cd android/
+  - ./gradlew clean install -xtest
