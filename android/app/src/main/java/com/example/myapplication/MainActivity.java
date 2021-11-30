@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity implements DefaultHardwareBa
                 .setJSMainModulePath("index")
                 .addPackage(new MainReactPackage())
                 .addPackage(new MyReactPackage())
-                // .addPackage(new RNCWebViewPackage())
+                .addPackage(new RNCWebViewPackage())
                 .setUseDeveloperSupport(BuildConfig.DEBUG)
                 .setInitialLifecycleState(LifecycleState.RESUMED)
                 .build();

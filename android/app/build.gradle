@@ -4,12 +4,6 @@ plugins {
     id 'com.github.dcendents.android-maven'
 }
 
-project.ext.react = [
-        bundleInDebug   : true,
-        jsBundleDirDebug: "$buildDir/intermediates/bundles/debug/assets",
-        jsBundleDirRelease: "$buildDir/intermediates/bundles/release/assets"
-]
-
 android {
     compileSdkVersion 31
     buildToolsVersion "30.0.3"
@@ -45,5 +39,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     implementation "com.facebook.react:react-native:+" // From node_modules
     implementation "org.webkit:android-jsc:+"
+    implementation "com.example:react-native-webview:+"
 //     implementation project(path: ':webview-sdk')
 }
